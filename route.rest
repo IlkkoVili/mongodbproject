@@ -1,0 +1,28 @@
+GET http://localhost:3000/movies
+
+###
+
+GET http://localhost:3000/movies/644a96659d20cc2f2cad1a82
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Amazing movie",
+    "runtime": 690,
+    "year": 1982
+}
+
+###
+
+DELETE http://localhost:3000/movies/644a735f2c8d28cfe90b1ec9
+
+###
+
+PATCH http://localhost:3000/movies/644a96659d20cc2f2cad1a82
+Content-Type: application/json
+
+{
+    "title": "New Movie"
+}
